@@ -127,7 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     _controller!.startImageStream((CameraImage image) async {
-      if (!_isDetecting) return;
+      if (_isDetecting) return;
 
       _isDetecting = true;
 
